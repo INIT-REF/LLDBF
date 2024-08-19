@@ -49,7 +49,7 @@ You can set the current cell to a certain value by just using the number in the 
 
 `72.101.108..111.44.32.87.111.114.108.100.33.10.`
 ### Negative numbers
-If you want to put a negative number in a cell (and because '-' is already used as a decrement operator), you need to use a little workaround for now. You can either multiply the number by -1 like so: `1234^0-^mv` or you can subtract it from 0 like so: `0^1234^sv`. When you can be sure that the stack is empty (i.e. it conists of 0s), you may also just do `1234^sv`.
+If you want to put a negative number in a cell (and because '-' is already used as a decrement operator), you need to use a little workaround for now. You can either multiply the number by -1 like so: `1234^0-^mv` or you can subtract it from 0 like so: `0^1234^sv`. When you can be sure that the stack is empty (i.e. it consists of 0s), you may also just do `1234^sv`.
 
 ## The stack
 The stack can hold up to two numbers, which can be pushed to the stack using `^`. The top stack item can be popped with `v`, after which the bottom item becomes the new top item (last in, first out). For example, if the current tape has the values 2, 3 in the first two cells, the pointer is at the first cell and we execute the sequence `^>^>v>v`, the first four cells will now be 2, 3, 3, 2.
