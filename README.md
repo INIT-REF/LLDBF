@@ -71,12 +71,12 @@ You can use the stack to quickly get the sum, difference, product, quotient or m
 ### Hello, World!
 `72.101.108..111.44.32.87.111.114.108.100.33.10.` (Same as above)
 ### Factorial of n (taking n as user input)
-`0>,[^>v-]1<[^<^mv]>#10.`
+`>,[^>v-]1<[^<^mv]>#10.`
 ### Print the first n Fibonacci numbers (n as user input)
-`,>0>1<<[>^^#32.v>^>v<^av>^<<v<-]10.`
+`,>>1<<[>^^#32.v>^>v<^av>^<<v<-]10.`
 ### Solutions for the first three Project Euler problems:
-`0>1000[>1[<-^>3^rv<^>>5^r<^mv]<^<^av>]<#10.`
+`>1000[>1[<-^>3^rv<^>>5^r<^mv]<^<^av>]<#10.`
 
-`0>1>1>1[[<^^>v<<^>av>^^<<v>>2^rv]<<^<^av>>>4000000^<^>sv]<<<#10.`
+`>1>1>1[[<^^>v<<^>av>^^<<v>>2^rv]<<^<^av>>>4000000^<^>sv]<<<#10.`
 
 `600851475143>3>1[<<^>^>rv[<++<^>^>rv]<<^>^<dv^>>1^sv]<#10.`
