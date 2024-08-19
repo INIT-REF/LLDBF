@@ -44,6 +44,11 @@ In addition there are the following commands:
 
 `r` modulus of bottom stack item and top one
 
+## Integer literals
+You can set the current cell to a certain value by just using the number in the source code. A trivial example would be the following "Hello, World!" implementation, which just uses the same cell over and over to print the characters one by one and a final new line:
+
+`72.101.108..111.44.32.87.111.114.108.100.33.10.`
+
 ## The stack
 The stack can hold up to two numbers, which can be pushed to the stack using `^`. The top stack item can be popped with `v`, after which the bottom item becomes the new top item (last in, first out). For example, if the current tape has the values 2, 3 in the first two cells, the pointer is at the first cell and we execute the sequence `^>^>v>v`, the first four cells will now be 2, 3, 3, 2.
 
@@ -59,3 +64,17 @@ You can use the stack to quickly get the sum, difference, product, quotient or m
 | 14 3         | m         | 0 42        |
 | 14 3         | d         | 0 4         |
 | 14 3         | r         | 0 2         |
+
+## Some practical examples
+### Hello, World!
+`72.101.108..111.44.32.87.111.114.108.100.33.10.` (Same as above)
+### Factorial of n (taking n as user input)
+`0>,[^>v-]1<[^<^mv]>#10.`
+### Print the first n Fibonacci numbers (n as user input)
+`,>0>1<<[>^^#32.v>^>v<^av>^<<v<-]10.`
+### Solutions for the first three Project Euler problems:
+`0>1000[>1[<-^>3^rv<^>>5^r<^mv]<^<^av>]<#10.`
+
+`0>1>1>1[[<^^>v<<^>av>^^<<v>>2^rv]<<^<^av>>>4000000^<^>sv]<<<#10.`
+
+`600851475143>3>1[<<^>^>rv[<++<^>^>rv]<<^>^<dv^>>1^sv]<#10.`
