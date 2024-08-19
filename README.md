@@ -5,23 +5,40 @@ A Brainf*ck inspired, interpreted language using signed 64bit cells (or whatever
 LLDBF is inspired by BF and some of its dialects. In fact, any non-wrapping BF code should work as is, but no guarantee. The similarities, diffrences and extensions are as follows:
 
 The usual BF commands work as expected:
+
 `+` increase the current cells value by 1
+
 `-` decrease the current cells value by 1
+
 `>` go to next cell
+
 `<` go to previous cell
+
 `[` enter loop if current cells value is > 0, else skip it
+
 `]` leave loop if current cells value is <= 0, else repeat it
+
 `.` print current cells value as char
+
 `,` get number as user input from stdin
 
+
 In addition there are the following commands:
+
 `#` print current cells value as number
+
 `^` push current cells value on the stack (leaves cell unchanged)
+
 `v` pop top stack item in current cell
+
 `a` add the numbers on the stack
+
 `s` subtract top stack item from bottom one
+
 `m` multiply the numbers on the stack
+
 `d` divide bottom stack item by top one (integer division like / in C)
+
 `r` modulus of bottom stack item and top one
 
 ## The stack
