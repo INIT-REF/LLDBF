@@ -1,5 +1,5 @@
 # LLDBF
-A Brainf*ck inspired, interpreted language using signed 64bit cells (or whatever long long int will be on your machine) and a 2-element stack. Numbers can entered as literals in the source code.
+A Brainf*ck inspired, interpreted language using signed 64bit cells (or whatever long long int will be on your machine) and a 2-element stack. Numbers can be entered as literals in the source code.
 
 ## Usage
 LLDBF is inspired by BF and some of its dialects. In fact, any non-wrapping BF code should work as is, but no guarantee. The similarities, diffrences and extensions are as follows:
