@@ -43,7 +43,7 @@ int main(int argc, char* argv[]) {
             case '+': tape[tapeptr]++; break;
             case '-': tape[tapeptr]--; break;
             case '^': stack1 = stack0; stack0 = tape[tapeptr]; break;
-            case 'v': tape[tapeptr] = stack0; stack0 = stack1; break;
+            case 'v': tape[tapeptr] = stack0; stack0 = stack1; stack1 = 0; break;
             case 'd': stack0 = stack1 / stack0; stack1 = 0; break;
             case 'r': stack0 = stack1 % stack0; stack1 = 0; break;
             case 'm': stack0 *= stack1; stack1 = 0; break;
