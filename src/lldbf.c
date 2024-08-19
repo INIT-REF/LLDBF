@@ -29,11 +29,12 @@ int main(int argc, char* argv[]) {
     for (int i = 0; buf[i]; i++) {
         int loopcnt = 1;
         long long n = 0;
+        int j = i;
 
         while (buf[i] >= '0' && buf[i] <= '9')
             n = n * 10 + buf[i++] - '0';
 
-        if (n)
+        if (i > j)
             tape[tapeptr] = n;
 
         switch (buf[i]) {
