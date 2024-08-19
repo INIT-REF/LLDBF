@@ -5,7 +5,6 @@ int main(int argc, char* argv[]) {
     long long tape[30000] = {0};
     long long stack0 = 0, stack1 = 0;
     char* buf;
-    char op;
     int tapeptr = 0;
     int filesize;
 
@@ -29,14 +28,13 @@ int main(int argc, char* argv[]) {
 
     for (int i = 0; buf[i]; i++) {
         int loopcnt = 1;
-        if (buf[i] >= '0' && buf[i] <= '9') {
-            long long n = 0;
+        long long n = 0;
 
-            while (buf[i] >= '0' && buf[i] <= '9')
-                n = n * 10 + buf[i++] - '0';
+        while (buf[i] >= '0' && buf[i] <= '9')
+            n = n * 10 + buf[i++] - '0';
 
+        if (n)
             tape[tapeptr] = n;
-        }
 
         switch (buf[i]) {
             case '>': tapeptr++; break;
