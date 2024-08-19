@@ -1,8 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+#define TAPESIZE 30000
+
 int main(int argc, char* argv[]) {
-    long long tape[30000] = {0};
+    long long tape[TAPESIZE + 1] = {0};
     long long stack0 = 0, stack1 = 0;
     char* buf;
     int tapeptr = 0;
@@ -38,7 +40,7 @@ int main(int argc, char* argv[]) {
             tape[tapeptr] = n;
 
         switch (buf[i]) {
-            case '>': tapeptr++; break;
+            case '>': tapeptr++; if (tapeptr > TAPESIZE) tapeptr = TAPESIZE; break;
             case '<': tapeptr--; if (tapeptr < 0) tapeptr = 0; break;
             case '+': tape[tapeptr]++; break;
             case '-': tape[tapeptr]--; break;
