@@ -23,8 +23,7 @@ The usual BF commands work as expected:
 `,` get number as user input from stdin
 
 
-
-
+&nbsp;
 
 
 In addition there are the following commands:
